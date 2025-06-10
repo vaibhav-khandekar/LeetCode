@@ -1,0 +1,4 @@
+# Write your MySQL query statement below
+SELECT DISTINCT customer_number
+FROM Orders
+WHERE order_number = (SELECT MAX(order_number) FROM Orders);
